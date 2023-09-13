@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.bg-img {
+  /* 使用的图像 */
+  background-image: url("https://static.www.tencent.com/img/banner/wxpay-banner.jpg");
+
+  min-height: 380px;
+
+  /* 居中并很好地缩放图像 */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* 需要定位导航栏 */
+  position: relative;
+}
+
+/* 将导航栏容器定位在图像中 */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* 导航栏 */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* 导航栏链接 */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<h2>图像上的导航栏</h2>
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+      <a href="#home">首页</a>
+      <a href="#news">News</a>
+      <a href="#contact">联系方式</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

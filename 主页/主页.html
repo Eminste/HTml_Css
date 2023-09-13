@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <div class="bcIMG">
+            <div class="top_box">
+                <a href="https://www.github.com"><img class="img_sty" src="https://pngimg.com/uploads/github/github_PNG40.png"></a>
+                <ul class="ul_type">
+                    <li><a href="/">简介</a></li>
+                    <li><a href="/">推荐</a></li>
+                    <li><a href="/">附件</a></li>
+                    <li><a href="/">广场</a></li>
+                    <li><a href="/">个人空间</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="word-bg">
+            <div class="Word-sty">
+                <p ><span style="font-size: 40px; color: #f00713;">微</span>信支付是集成在微信客户端的支付功能，用户可以通过手机完成快速的支付流程。微信支付以绑定银行卡的快捷支付为基础，向用户提供安全、快捷、高效的支付服务。</p>
+    
+                <p>微信支付又名WeChat Pay，它属于腾讯集团，目前适用于安卓以及IOS的系统。用户们在微信平台上可以使用。实际上，这一支付手段才开始不久，它是在2014年9月26日才正式发布的，对于微信用户都是可以使用的。</p>
+                
+                <p>不过值得用户注意的是，在使用微信支付的时候前提是需要你有零钱或者是你得绑定相关的银行卡才可以使用，不然用户的微信中是没有钱可以使用的。这里的零钱可以是他人给你发的红包或者是他人给你转账的资金来源或者是其他的收益所赚的钱。</p>
+                
+                <P>绑定银行卡则是在消费时使用银行卡里的钱。不过用户可以绑定银行卡，然后再把银行卡里的钱通过提现或者时转账的途经，钱就可以在零钱和银行卡中相互的转换，不过值得注意的是用户在提现的时候，是会有一定比例的手续费用的，这是目前微信支付的不足之处。</P>
+                
+                <p>不过，微信支付在当今社会中随处可见，与支付宝已经成为了现在最炙手可热的支付方式了，而微信支付以它的方便、快捷、高效赢得了更多用户的喜爱。</p>
+                
+                <p>更便利的是，微信支付除了在平时买东西或者是转钱的时候可以使用，在买车票、外出看电影、对手机进行充值等等都是可以的，可以说用户们可以足不出户就可以轻松生活了。这确实是解决了大部分用户的烦恼。</p>
+            </div>
+        </div>
+        <!-- <bac class="bcIMG"></span> -->
+        
+    </header>
+</body>
+</html>
+
+<style>
+*{ 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+    
+    
+.ul_type{
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right; /*右边*/
+    display: flex;
+    overflow: hidden;
+    z-index: 100;
+}
+.ul_type li a:before{
+	/*a:before，在a链接之前添加新内容，这里添加上下边框*/
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-top:1px solid #7a0c50;
+	border-bottom:1px solid #1670b9;
+	transform: scaleY(2);/*拉长边框两倍*/
+	opacity: 0;/*边距不显示*/
+	transition: 0.5s;
+	z-index: -1;
+}
+.ul_type li a:hover:before{
+	transform: scaleY(1);/*拉长边框两倍*/
+	opacity:1;
+}
+.ul_type li a:after{
+	content:'';
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f76464;
+	transform: scale(0);
+	transition: 0.5s;
+	z-index: -1;
+}
+.ul_type li a:hover:after{
+	transform: scale(1);
+}
+.top_box{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+}
+.ul_type li{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: right;
+    /*padding: 1em;*/
+}
+.img_sty{
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 8px;
+    height: 30px;
+    width: 30px;
+    float: left;
+    display: inline-flex;
+}
+.ul_type li a{
+    position: relative;
+    margin: 5px 0 8px;
+    float: right;
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 16px;
+}
+.ul_type a:hover{
+    color: cadetblue;
+}
+ul.li :active a{
+    background-color: tomato;
+    color: #d15fd1;
+}
+/* header{
+    background: rgb(167, 191, 228);
+    
+} */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.bcIMG{
+    background-image: url("1.png");
+    /* z-index: 1; */
+    min-height: 380px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.Word-sty{
+    list-style: 25px;
+    font-size: 18px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    width: auto;
+    text-indent: 2em;
+}
+.word-bg{
+    overflow: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: aquamarine;
+    opacity: 0.6;
+}
+</style>
